@@ -12,7 +12,7 @@ class Products extends Component {
 
   getProducts() {
     axios
-      .get("http://localhost:3000/api/Products")
+      .get("https://boulangerie-maxou.herokuapp.com/api/Products")
       .then(res => {
         this.setState({ products: res.data });
       })

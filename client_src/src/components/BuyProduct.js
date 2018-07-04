@@ -14,7 +14,7 @@ class BuyProduct extends Component {
   getProduct() {
     let id = this.props.match.params.id;
     axios
-      .get(`http://localhost:3000/api/products/${id}`)
+      .get(`https://boulangerie-maxou.herokuapp.com/api/products/${id}`)
       .then(res => {
         this.setState({ details: res.data });
       })
@@ -30,7 +30,7 @@ class BuyProduct extends Component {
     axios
       .request({
         method: "post",
-        url: `http://localhost:3000/api/products/${id}/buy`,
+        url: `https://boulangerie-maxou.herokuapp.com/api/products/${id}/buy`,
         data: order
       })
       .then(response => {

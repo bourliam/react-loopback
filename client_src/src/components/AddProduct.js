@@ -7,7 +7,7 @@ class AddProduct extends Component {
     axios
       .request({
         method: "post",
-        url: "http://localhost:3000/api/products?access_token=s3cr3t",
+        url: "https://boulangerie-maxou.herokuapp.com/api/products?access_token=s3cr3t",
         data: newProduct
       })
       .then(response => {

@@ -13,7 +13,7 @@ class ProductDetails extends Component {
   getProduct() {
     let id = this.props.match.params.id;
     axios
-      .get(`http://localhost:3000/api/products/${id}`)
+      .get(`https://boulangerie-maxou.herokuapp.com/api/products/${id}`)
       .then(res => {
         this.setState({ details: res.data });
       })
@@ -27,7 +27,7 @@ class ProductDetails extends Component {
   onDelete() {
     let id = this.state.details.id;
     axios
-      .delete(`http://localhost:3000/api/products/${id}?access_token=s3cr3t`)
+      .delete(`https://boulangerie-maxou.herokuapp.com/api/products/${id}?access_token=s3cr3t`)
       .then(res => {
         this.props.history.push("/");
       })
