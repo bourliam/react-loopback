@@ -1,12 +1,7 @@
 {
   "db": {
-    "host": "localhost",
-    "port": 27017,
-    "url": "",
-    "database": "coffee-app",
-    "password": "",
+    "url": "mongodb://max:3l0die@ds125871.mlab.com:25871/heroku_jwtspb66",
     "name": "db",
-    "user": "",
     "connector": "mongodb"
   }
 }
