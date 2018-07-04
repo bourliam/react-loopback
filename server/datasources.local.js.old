@@ -1,0 +1,16 @@
+'use strict';
+const mongodbUrl = 'mongodb+srv://admin:rhI5OM5gqZ7ZkphE@hellolb-lklev.gcp.mongodb.net/test?retryWrites=true';
+
+if (mongodbUrl) {
+  console.log('Using MongoDB url:', mongodbUrl);
+
+  const dataSources = {
+    db: {
+      name: 'db',
+      connector: 'mongodb',
+      url: mongodbUrl,
+    },
+  };
+
+  module.exports = dataSources;
+}
